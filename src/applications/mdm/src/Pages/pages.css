@@ -1,0 +1,35 @@
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container .btn {
+  margin-right: 20px;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.bold {
+  color: red;
+}
+
+.continue-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.new-button-container button {
+  margin-right: 10px;
+}
+
+.no-border-input {
+  outline: none;
+}

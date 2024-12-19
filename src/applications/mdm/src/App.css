@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+@media print {
+  body {
+    height: 297mm;
+    width: 210mm;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+body {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+.layer-left,
+.layer-right {
+  display: block;
+}
+
+/* .table-border {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-style: hidden;
+  border: 3px solid black;
+  /*Remove all the outside
+  borders of the existing table
+}
+.table-border td {
+  padding: 0.5rem;
+  border: 1.5px solid black;
+}
+.table-border th {
+  padding: 0.5rem;
+  border: 1.5px solid black;
+} */
+
+table.table-border {
+  border-collapse: collapse;
+}
+
+.table-border td, .table-border th {
+  border: 2px solid black;
+  padding: 8px;
+}
+
+.table-border {
+  border: 4px solid black;
+}
+
+.table-bordered td {
+  border-width: 2px !important; /* Set the width as per your requirement */
+}
+
+@page {
+  margin: 0 !important;
+  padding: 0 !important;
+  size: A4;
+}
+
+#content {
+  display: table;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media print {
+
+  header,
+  footer {
+    display: block;
+  }
+
+  body {
+    counter-reset: page;
+  }
+
+  header:nth-child(odd) .layer-left {
+    display: block;
+  }
+
+  header:nth-child(even) .layer-right {
+    display: block;
+  }
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.text-green {
+  color: #F27336 !important;
+}
+
+.m--2 {
+  margin-left: -17.2667px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.primary-button {
+  background-color: #F27336 !important;
+  border: none
+}
+
+.danger-button {
+  background-color: #E92729 !important;
+  border: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.me-5 {
+  padding-right: 3rem !important;
+}
+
+.faq-table .row {
+  border-bottom: 1px solid black;
+  scroll-margin-top: 10rem;
+}
+
+.faq-table .row:last-child {
+  border-bottom: none;
+}
+
+.faq-table {
+  border: 1px solid black
+}
+
+.faq-table .row div:first-child {
+  border-right: 1px solid black;
+}
+
+.faq-short-cuts {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.faq-short-cuts a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #EFEFEF;
+
+}
+
+.faq-short-cuts a:hover {
+  color: #F27336;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-gray {
+  color: #8E8E8E;
+}
+
+.text-gray:hover {
+  color: #8E8E8E;
+}
+
+.text-blue {
+  color: #1E90FF;
+}
+
+.border-none {
+  border: none;
+}

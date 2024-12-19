@@ -1,0 +1,19 @@
+.larger-image {
+    width: 480px;
+    height: auto;
+    margin-top: 25px;
+  }
+
+  .larger-image-container {
+    text-align: center;
+    width: 480px;
+  }
+  /* .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-container {
+    align-self: flex-start;
+  } */
+  

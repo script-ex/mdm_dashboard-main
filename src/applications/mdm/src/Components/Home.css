@@ -1,0 +1,58 @@
+
+@media print {
+    .home {
+        margin-top: 0px;
+    }
+}
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.sidebar ul {
+    position: fixed;
+    padding-bottom: 13rem;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-width: 2px !important;
+
+}
+
+.sidebar-active {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.content {
+    overflow: auto;
+}
+
+.home .content .col-md-3 {
+    border: 2px solid rgb(228, 215, 215);
+}
+
+.square-box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.table-container {
+    display: flex;
+    gap: 20px;
+}
+
+.table-bordered {
+    border: 2px solid black;
+}
